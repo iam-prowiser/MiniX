@@ -1,4 +1,4 @@
-import { Home, Search, Bell, type LucideIcon } from "lucide-react"
+import { Home, Search, Bell, type LucideIcon, Mail, Bookmark, User, Settings } from "lucide-react"
 
 type sidebarItems = {
     id: number,
@@ -25,6 +25,30 @@ const sidebarItems: sidebarItems[] = [
         label: "Notifications",
         path: '/notifications',
         icon: Bell
+    },
+    {
+        id: 4,
+        label: "Messages",
+        path: '/messages',
+        icon: Mail
+    },
+    {
+        id: 5,
+        label: "Bookmarks",
+        path: '/bookmarks',
+        icon: Bookmark
+    },
+    {
+        id: 6,
+        label: "Profile",
+        path: '/profile',
+        icon: User
+    },
+    {
+        id: 7,
+        label: "Settings",
+        path: '/settings',
+        icon: Settings
     }
 ]
 

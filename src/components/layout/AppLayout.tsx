@@ -1,16 +1,12 @@
+import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar/Sidebar";
-import type { ReactNode } from "react";
 
-type AppLayoutProps = {
-    children: ReactNode;
-}
 
-export default function AppLayout({ children }: AppLayoutProps) {
-    
+export default function AppLayout() {    
     return (
         <div>
             <Sidebar />
-            {children}
+            <Outlet />
         </div>
     )
 }
